@@ -1,0 +1,20 @@
+- [ ] Deve haver um **input de texto** onde o usuário digita um nome.
+- [ ] Ao digitar o nome, a consulta à API deve ser feita e o resultado exibido na tela:
+  - [ ] O usuário **não precisa apertar Enter** ou pressionar botão algum.
+  - [ ] A consulta deve ocorrer automaticamente após o usuário parar de digitar.
+  - [ ] Implementar um **debounce de 500–1000ms** para evitar chamadas excessivas à API.
+- [ ] Usar a função **`load()`** do SvelteKit para requisitar a API:
+  - [ ] Pode ser um `+page.ts`, `+page.js`, `+page.server.ts`, etc.
+  - [ ] A chamada **deve obrigatoriamente acontecer dentro de um `load()`**.
+- [ ] A URL da aplicação deve ser atualizada com a querystring `?name=`, por exemplo:
+  - [ ] `http://localhost:5173/?name=Jebediah`
+  - [ ] A URL deve ser **copiável/colável**, e ao abrir, carregar o resultado correspondente.
+- [x] **Não realizar a chamada à API se o nome estiver vazio**.
+- [ ] Produzir **HTML5 válido**.
+- [ ] Estilizar a aplicação com **CSS puro**:
+  - [ ] Não utilizar bibliotecas como Tailwind, Bootstrap, Normalize.css, etc.
+  - [ ] Criar estilo próprio e evitar aparência padrão dos navegadores.
+- [ ] Utilizar **Git** no controle de versão.
+- [ ] Não adicionar bibliotecas externas:
+  - [ ] Exceto se necessário para uso opcional de TypeScript ou JSDoc.
+  - [ ] Manter o `package.json` sem novas dependências (exceto se essencial ao TS/JS Doc).
