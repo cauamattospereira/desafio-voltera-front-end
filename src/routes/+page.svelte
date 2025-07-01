@@ -1,21 +1,17 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
+	import { debounce } from "$lib/utils/debounce";
 	import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();
 
+    let input = $state('');
 
-    function onSubmit(event: SubmitEvent) {
-        const form = event.currentTarget as HTMLFormElement;
-        const formData = new FormData(form);
 
-        const name = formData.get('name')?.toString().trim()
-
-        if (name) {
-            goto(`/?name=${encodeURIComponent(name)}`)
-        }
-
-    }
+    const updateUserQuery = debounce((input: string) => {
+            let name = input.toString().trim();
+            goto(`/?name=${encodeURIComponent(name)}`);
+        }, 1000)
 </script>
 
 <h1>Olá {data.data?.name ?? "visitante!"}</h1>
@@ -23,7 +19,9 @@
 
 
 
-<form onsubmit={(data) => onSubmit(data)}>
-    <input type="text" name="name">
-    <button type="submit">Enviar</button>
-</form>
+<input
+    type="text"
+    bind:value={input}
+    oninput={() => updateUserQuery(input)}
+    name="name"
+/>
