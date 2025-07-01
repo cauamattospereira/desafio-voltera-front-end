@@ -1,15 +1,12 @@
-- [ ] Deve haver um **input de texto** onde o usuário digita um nome.
-- [ ] Ao digitar o nome, a consulta à API deve ser feita e o resultado exibido na tela:
-  - [ ] O usuário **não precisa apertar Enter** ou pressionar botão algum.
-  - [ ] A consulta deve ocorrer automaticamente após o usuário parar de digitar.
-  - [ ] Implementar um **debounce de 500–1000ms** para evitar chamadas excessivas à API.
-- [ ] Usar a função **`load()`** do SvelteKit para requisitar a API:
-  - [ ] Pode ser um `+page.ts`, `+page.js`, `+page.server.ts`, etc.
-  - [ ] A chamada **deve obrigatoriamente acontecer dentro de um `load()`**.
-- [ ] A URL da aplicação deve ser atualizada com a querystring `?name=`, por exemplo:
-  - [ ] `http://localhost:5173/?name=Jebediah`
-  - [ ] A URL deve ser **copiável/colável**, e ao abrir, carregar o resultado correspondente.
-- [x] **Não realizar a chamada à API se o nome estiver vazio**.
+- [X] Deve haver um **input de texto** onde o usuário digita um nome.
+- [X] Ao digitar o nome, a consulta à API deve ser feita e o resultado exibido na tela:
+  - [X] O usuário **não precisa apertar Enter** ou pressionar botão algum.
+  - [X] A consulta deve ocorrer automaticamente após o usuário parar de digitar.
+  - [X] Implementar um **debounce de 500–1000ms** para evitar chamadas excessivas à API.
+- [X] Usar a função **`load()`** do SvelteKit para requisitar a API:
+- [X] A URL da aplicação deve ser atualizada com a querystring `?name=`, por exemplo:
+  - [X] A URL deve ser **copiável/colável**, e ao abrir, carregar o resultado correspondente.
+- [X] **Não realizar a chamada à API se o nome estiver vazio**.
 - [ ] Produzir **HTML5 válido**.
 - [ ] Estilizar a aplicação com **CSS puro**:
   - [ ] Não utilizar bibliotecas como Tailwind, Bootstrap, Normalize.css, etc.
