@@ -8,10 +8,7 @@
   - [X] A URL deve ser **copiável/colável**, e ao abrir, carregar o resultado correspondente.
 - [X] **Não realizar a chamada à API se o nome estiver vazio**.
 - [ ] Produzir **HTML5 válido**.
+  - [ ] Garantir responsividade
 - [ ] Estilizar a aplicação com **CSS puro**:
-  - [ ] Não utilizar bibliotecas como Tailwind, Bootstrap, Normalize.css, etc.
-  - [ ] Criar estilo próprio e evitar aparência padrão dos navegadores.
-- [ ] Utilizar **Git** no controle de versão.
-- [ ] Não adicionar bibliotecas externas:
-  - [ ] Exceto se necessário para uso opcional de TypeScript ou JSDoc.
-  - [ ] Manter o `package.json` sem novas dependências (exceto se essencial ao TS/JS Doc).
+- [X] Utilizar **Git** no controle de versão.
+- [X] Manter o `package.json` sem novas dependências.
