@@ -21,6 +21,9 @@
   position: fixed;
   display: block;
   top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
