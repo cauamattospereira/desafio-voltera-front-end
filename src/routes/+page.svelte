@@ -169,9 +169,10 @@
                 name="name"
                 />
             </div>
+            <!-- divisor -->
+            <div style="width: 100%; height: 0.5px; background-color: rgba(255, 255, 255, 0.3);"></div>
         </div>
 
-        <div style="width: 100%; height: 0.5px; background-color: rgba(255, 255, 255, 0.3);"></div>
 
         {#if data.data?.name}
             <p style="text-align: center;">
@@ -351,7 +352,7 @@
         </div>
     </div>
 
-    <div class="footer-text" style="width: 80%; display: flex; justify-content: center; text-align: center; font-size: 0.9rem; font-weight: 200;">
+    <div class="footer-text" style="width: 100%; opacity: 0.5; display: flex; justify-content: center; text-align: center; font-size: 0.9rem; font-weight: 200;">
         Esse projeto foi feito por Cauã de Mattos Pereira, para o desafio da vaga de desenvolvedor front-end para a Voltera Energia.
     </div>
 
@@ -430,6 +431,11 @@
         font-weight: normal;
     }
 
+    .footer-text {
+    position: absolute;
+    bottom: 5%;
+  }
+
     .title {
         font-size: 2.4rem;
         text-align: center;
@@ -468,13 +474,14 @@
     box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.2);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
   .main-section {
     padding-top: 20rem;
   }
 
   .footer-text {
     position: relative;
+    width: 100%;
   }
 
   .glow-svg {
